@@ -14,6 +14,7 @@ group :development, :test do
   gem 'childprocess', '~> 0.3.9'
   gem 'spork', '~> 0.9.2'
   gem 'commands', '~> 0.2.1'
+  gem 'awesome_print', '1.2.0', require: 'awesome_print'
   gem 'pry'
 end
 

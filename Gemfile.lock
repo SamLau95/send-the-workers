@@ -30,6 +30,7 @@ GEM
       rake (>= 0.8.7)
     arel (4.0.1)
     atomic (1.1.14)
+    awesome_print (1.2.0)
     bcrypt-ruby (3.1.2)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
@@ -171,6 +172,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (~> 2.6.1)
+  awesome_print (= 1.2.0)
   better_errors (~> 1.1.0)
   cancan (~> 1.6.10)
   capybara (~> 2.2.0)
