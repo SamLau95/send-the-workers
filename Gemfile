@@ -7,6 +7,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'faker', '~> 1.2.0'
 gem 'cancan', '~> 1.6.10'
 gem 'devise', '~> 3.2.2'
+gem 'newrelic_rpm'
 
 gem 'haml-rails'
 gem 'sass-rails', '~> 4.0.0'
