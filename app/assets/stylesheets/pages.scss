@@ -13,23 +13,30 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:700);
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 // @import url(http://fonts.googleapis.com/css?family=Ledger);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
 $heading-font-stack: "League Gothic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
+.content {
+  padding: 3rem;
+}
+
+.button {
+  // font-family: "Open Sans", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
 #sec-1 {
+  text-align: center;
+
   .heading {
     padding: 2rem 3rem;
-    text-align: center;
   }
 
   #title {
-    margin-top: 8rem;
+    margin: 8rem 0 -1rem;
     font-size: 8rem;
     font-family: $heading-font-stack;
     text-transform: uppercase;
   }
-}
-
-.content {
-  padding: 3rem;
 }
