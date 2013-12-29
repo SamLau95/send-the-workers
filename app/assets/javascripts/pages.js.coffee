@@ -14,6 +14,6 @@ $(".main").onepage_scroll
   loop: false
   responsiveFallback: false
 
-$('#continue').on 'click', ->
+$('#begin').on 'click', ->
   $('.main').moveDown()
   false

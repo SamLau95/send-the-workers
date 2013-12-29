@@ -22,8 +22,7 @@ $heading-font-stack: "League Gothic", "Helvetica Neue", "Helvetica", Helvetica, 
 }
 
 .button {
-  // font-family: "Open Sans", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-size: 1.5rem;
 }
 
 #sec-1 {
@@ -34,9 +33,13 @@ $heading-font-stack: "League Gothic", "Helvetica Neue", "Helvetica", Helvetica, 
   }
 
   #title {
-    margin: 8rem 0 -1rem;
+    margin: 6% 0 -2%;
     font-size: 8rem;
     font-family: $heading-font-stack;
     text-transform: uppercase;
+  }
+
+  #tagline {
+    font-size: 1.3rem;
   }
 }

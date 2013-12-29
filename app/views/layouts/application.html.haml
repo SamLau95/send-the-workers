@@ -13,9 +13,9 @@
     /[if lt IE 8]
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 
-    / Temporary
-    - flash.each do |key, value|
-      = content_tag :div, value, class: "#{key} alert"
+    .row
+      - flash.each do |key, value|
+        = content_tag :div, value, class: "#{key} alert-box radius"
 
     = yield
 
