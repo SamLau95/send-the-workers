@@ -4,8 +4,8 @@
 $(".main").onepage_scroll
   sectionContainer: "section"
   easing: "ease"
-  animationTime: 700
-  pagination: true
+  animationTime: 500
+  pagination: false
   updateURL: false
   beforeMove: (index) ->
 
