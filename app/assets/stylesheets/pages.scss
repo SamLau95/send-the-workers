@@ -1,11 +1,41 @@
-.heading {
-  text-align: center;
+/* Regular League Gothic font face */
+@font-face {
+   font-family: 'League Gothic';
+   src: url('/assets/leaguegothic-regular-webfont.eot');
+   src: url('/assets/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('/assets/leaguegothic-regular-webfont.woff') format('woff'),
+        url('/assets/leaguegothic-regular-webfont.ttf') format('truetype'),
+        url('/assets/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+   font-weight: normal;
+   font-style: normal;
 }
 
-.content {
-  padding: 2em 3em;
+@import url(http://fonts.googleapis.com/css?family=Oswald:700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+// @import url(http://fonts.googleapis.com/css?family=Ledger);
+
+$heading-font-stack: "League Gothic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-stack: "Droid Serif", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+body {
+  font-family: $font-stack;
+  line-height: 1.8;
 }
 
 #sec-1 {
-  // background-image: url(http://placehold.it/300/ECECEC/ECECEC);
+  .heading {
+    padding: 2em 3em;
+  }
+
+  #title {
+    font-size: 8em;
+    font-family: $heading-font-stack;
+    text-transform: uppercase;
+    word-spacing: 10000em;
+    line-height: 1;
+  }
+
+  .content {
+    padding: 2em 3em;
+  }
 }
