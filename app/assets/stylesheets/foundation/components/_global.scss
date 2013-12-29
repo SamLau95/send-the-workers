@@ -186,7 +186,7 @@ $base-line-height: 150% !default;
 // We use these to control various global styles
 $body-bg: #fff !default;
 $body-font-color: #222 !default;
-$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$body-font-family: "Droid Serif", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $body-font-weight: normal !default;
 $body-font-style: normal !default;
 
@@ -321,7 +321,7 @@ $cursor-text-value: text !default;
       font-family: $body-font-family;
       font-weight: $body-font-weight;
       font-style: $body-font-style;
-      line-height: 1; // Set to $base-line-height to take on browser default of 150%
+      line-height: 1.8; // Set to $base-line-height to take on browser default of 150%
       position: relative;
       cursor: $cursor-default-value;
     }
