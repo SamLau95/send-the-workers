@@ -23,8 +23,13 @@ $heading-font-stack: "League Gothic", "Helvetica Neue", "Helvetica", Helvetica, 
   }
 
   #title {
+    margin-top: 8rem;
     font-size: 8rem;
     font-family: $heading-font-stack;
     text-transform: uppercase;
   }
+}
+
+.content {
+  padding: 3rem;
 }

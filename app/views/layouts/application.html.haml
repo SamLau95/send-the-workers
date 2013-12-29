@@ -15,23 +15,5 @@
 
     = yield
 
-    :javascript
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-42949369-2');ga('send','pageview');
+    = render 'shared/ga_boiler'
     = javascript_include_tag "application", "data-turbolinks-track" => true
-    :javascript
-      $(".main").onepage_scroll({
-         sectionContainer: "section",
-         easing: "ease",
-         animationTime: 700,
-         pagination: true,
-         updateURL: false,
-         beforeMove: function(index) {},
-         afterMove: function(index) {},
-         loop: false,
-         responsiveFallback: false
-      });
