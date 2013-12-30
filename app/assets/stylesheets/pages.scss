@@ -25,15 +25,26 @@ $heading-font-stack: "League Gothic", "Helvetica Neue", "Helvetica", Helvetica, 
   font-size: 1.5rem;
 }
 
+.center-vertical {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 #sec-1 {
   text-align: center;
+
+  .container {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
 
   .heading {
     padding: 2rem 3rem;
   }
 
   #title {
-    margin: 6% 0 -2%;
+    margin: 0 0 -1rem;
     font-size: 8rem;
     font-family: $heading-font-stack;
     text-transform: uppercase;
@@ -41,5 +52,6 @@ $heading-font-stack: "League Gothic", "Helvetica Neue", "Helvetica", Helvetica, 
 
   #tagline {
     font-size: 1.3rem;
+    margin: 0 0 4rem;
   }
 }
