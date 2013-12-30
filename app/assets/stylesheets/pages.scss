@@ -17,6 +17,10 @@
 
 $heading-font-stack: "League Gothic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
+body {
+  background-color: #FEFFF8;
+}
+
 .content {
   padding: 3rem;
 }
@@ -66,12 +70,12 @@ $heading-font-stack: "League Gothic", "Helvetica Neue", "Helvetica", Helvetica, 
     }
 
     #title {
-      font-size: 3.2rem;
+      font-size: 3rem;
       margin: 0;
     }
     
     #tagline {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
 }
