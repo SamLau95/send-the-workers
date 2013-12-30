@@ -22,6 +22,8 @@ body {
 
 #sec-1 {
   text-align: center;
+  background-image: url(http://i.imgur.com/bxG5man.png);
+  background-position: 0 -5rem;
 
   .container {
     display: table;
@@ -31,12 +33,14 @@ body {
 
   .heading {
     padding: 2rem 3rem;
+    color: white;
   }
 
   #title {
     margin: 0 0 -0.5rem;
     font-size: 8rem;
     font-family: $title-font-stack;
+    color: white;
   }
 
   #tagline {
@@ -56,7 +60,7 @@ body {
     }
 
     #title {
-      font-size: 2.4rem;
+      font-size: 2.3rem;
       margin: 0;
     }
     

@@ -12,8 +12,16 @@ $(".main").onepage_scroll
   afterMove: (index) ->
 
   loop: false
-  responsiveFallback: false
+  responsiveFallback: 640
 
-$('#begin').on 'click', ->
-  $('.main').moveDown()
-  false
+$('#begin').on 'click', (e) ->
+  e.preventDefault();
+  if $('body.disabled-onepage-scroll').length
+    $target = $(@hash)
+    $('html, body').animate
+      scrollTop: $target.offset().top
+    , 900
+    true
+  else
+    $('.main').moveDown()
+    false
