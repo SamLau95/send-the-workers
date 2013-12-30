@@ -1,21 +1,7 @@
-/* Regular League Gothic font face */
-@font-face {
-   font-family: 'League Gothic';
-   src: url('/assets/leaguegothic-regular-webfont.eot');
-   src: url('/assets/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('/assets/leaguegothic-regular-webfont.woff') format('woff'),
-        url('/assets/leaguegothic-regular-webfont.ttf') format('truetype'),
-        url('/assets/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
-   font-weight: normal;
-   font-style: normal;
-}
 
-@import url(http://fonts.googleapis.com/css?family=Oswald:700);
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
-// @import url(http://fonts.googleapis.com/css?family=Ledger);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
-
-$heading-font-stack: "League Gothic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+$title-font-stack: "Dancing Script", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 body {
   background-color: #FEFFF8;
@@ -26,7 +12,7 @@ body {
 }
 
 .button {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .center-vertical {
@@ -48,15 +34,15 @@ body {
   }
 
   #title {
-    margin: 0 0 -1rem;
+    margin: 0 0 -0.5rem;
     font-size: 8rem;
-    font-family: $heading-font-stack;
-    text-transform: uppercase;
+    font-family: $title-font-stack;
   }
 
   #tagline {
-    font-size: 1.3rem;
-    margin: 0 0 4rem;
+    font-size: 1.4rem;
+    margin: 0 0 2rem;
+    // font-family: "Ledger"
   }
 }
 
