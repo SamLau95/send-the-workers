@@ -55,3 +55,20 @@ $heading-font-stack: "League Gothic", "Helvetica Neue", "Helvetica", Helvetica, 
     margin: 0 0 4rem;
   }
 }
+
+@media only screen and (max-width: 40em) {
+  #sec-1 {
+    .heading {
+      padding: 1rem;
+    }
+
+    #title {
+      font-size: 3.1rem;
+      margin: 0;
+    }
+    
+    #tagline {
+      font-size: 1rem;
+    }
+  }
+}
