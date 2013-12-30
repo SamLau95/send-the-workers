@@ -3,8 +3,10 @@
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
 $title-font-stack: "Dancing Script", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
+$off-white: #FEFFF8;
+
 body {
-  background-color: #FEFFF8;
+  background-color: $off-white;
 }
 
 .content {
@@ -22,8 +24,8 @@ body {
 
 #sec-1 {
   text-align: center;
-  background-image: url(http://i.imgur.com/bxG5man.png);
-  background-position: 0 -5rem;
+  background: url(http://i.imgur.com/bxG5man.png);
+  background-size: cover;
 
   .container {
     display: table;
@@ -40,13 +42,12 @@ body {
     margin: 0 0 -0.5rem;
     font-size: 8rem;
     font-family: $title-font-stack;
-    color: white;
+    color: $off-white;
   }
 
   #tagline {
     font-size: 1.4rem;
     margin: 0 0 2rem;
-    // font-family: "Ledger"
   }
 }
 
@@ -55,6 +56,8 @@ body {
     font-size: 1rem;
   }
   #sec-1 {
+    background-position: 30% 20%;
+
     .heading {
       padding: 1rem;
     }
