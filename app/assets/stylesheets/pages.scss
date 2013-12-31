@@ -5,9 +5,22 @@ $title-font-stack: "Dancing Script", "Helvetica Neue", "Helvetica", Helvetica, A
 
 $off-white: #FEFFF8;
 
-body {
+html, body {
   background-color: $off-white;
+  width: 100%;
+  height: 100%;
 }
+
+section[id*='sec-'] {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
 
 .content {
   padding: 3rem;
@@ -26,6 +39,8 @@ body {
   text-align: center;
   background: url('https://s3-us-west-1.amazonaws.com/send-the-workers/BGedit+(1).png');
   background-size: cover;
+  width: 100%;
+  height: 100%;
 
   .container {
     display: table;
