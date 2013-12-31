@@ -6,5 +6,5 @@ $('#begin').on 'click', (e) ->
   $target = $(@hash)
   $('html, body').animate
     scrollTop: $target.offset().top
-  , 600
+    600
   false

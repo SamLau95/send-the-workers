@@ -1,17 +1,19 @@
-/ %div{ 'data-magellan-expedition' => 'fixed' }
-/   %dl.side-nav
-/     %dd{ 'data-magellan-arrival' => 'Home' }
-/       %a{ href: '#' } Home
-/     %dd{ 'data-magellan-arrival' => 'James' }
-/       %a{ href: '#sec-2' } James
 
-%section#sec-1
+%section#landing
   .container
     .row.heading.center-vertical
       .small-12.columns
         %h1#title Send The Workers
         %p#tagline Testimonies of God's work in the ordinary
         %a.button.radius#begin{ href: '#sec-2' } Begin
+
+%div#navigation{ 'data-magellan-expedition' => 'fixed' }
+  %dl.sub-nav
+    %dd{ 'data-magellan-arrival' => 'Home' }
+      %a{ href: '#' } Home
+    %dd{ 'data-magellan-arrival' => 'James' }
+      %a{ href: '#sec-2' } James
+
 %section#sec-2
   .row
     .small-12.columns.content
