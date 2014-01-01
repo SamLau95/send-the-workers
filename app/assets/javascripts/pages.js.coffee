@@ -11,5 +11,5 @@ $('a[href^="#"]').on 'click', (e) ->
   false
 
 # Sticky side nav for medium+ screens
-mq = window.matchMedia( "(max-width: 40em)" )
-$('.side-navigation').stickyfloat() if !mq.matches
+mq = window.matchMedia( "(min-width: 40.063em)" )
+$('.side-navigation').stickyfloat() if mq.matches
