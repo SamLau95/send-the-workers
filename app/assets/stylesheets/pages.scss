@@ -1,13 +1,12 @@
 // Variables, fonts
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800|Dancing+Script:700|Oswald:700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300|Dancing+Script:700|Oswald:700);
 $title-font-stack: "Dancing Script", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $sub-heading-font-stack: "Oswald", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
-$off-white: #FEFFF8;
+$off-white: #FFFAEE;
 
 // Global styles
 html, body {
-  background-color: $off-white;
   width: 100%;
   height: 100%;
 }
@@ -21,6 +20,10 @@ html, body {
 .center-vertical {
   display: table-cell;
   vertical-align: middle;
+}
+
+.button {
+  font-size: 1.3rem;
 }
 
 // Sidebar
@@ -60,10 +63,6 @@ html, body {
     display: table;
     width: 100%;
     height: 100%;
-
-    .button {
-      font-size: 1.3rem;
-    }
   }
 
   .heading {
