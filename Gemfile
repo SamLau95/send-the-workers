@@ -4,6 +4,7 @@ ruby '2.1.0'
 gem 'rails', '4.0.2'
 gem 'jquery-rails', '~> 3.0.4'
 gem 'turbolinks', '~> 2.1.0'
+gem 'pg', '~> 0.17.1'
 gem 'jbuilder', '~> 1.2'
 gem 'ffaker', '~> 1.22.1'
 gem 'cancan', '~> 1.6.10'
@@ -29,6 +30,7 @@ group :development do
   gem 'annotate', '~> 2.6.1'
   gem 'better_errors', '~> 1.1.0'
   gem 'binding_of_caller'
+  gem 'meta_request'
 end
 
 group :test do
@@ -36,8 +38,4 @@ group :test do
   gem 'factory_girl_rails', '~> 4.3.0'
   gem 'database_cleaner', '~> 1.2.0'
   gem 'shoulda', '~> 3.5.0'
-end
-
-group :production do
-  gem 'pg'
 end

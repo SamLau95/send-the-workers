@@ -38,6 +38,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.1.4)
+    callsite (0.0.11)
     cancan (1.6.10)
     capybara (2.2.0)
       mime-types (>= 1.16)
@@ -87,6 +88,10 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta_request (0.2.8)
+      callsite
+      rack-contrib
+      railties
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.5.2)
@@ -103,6 +108,8 @@ GEM
       method_source (~> 0.8)
       slop (~> 3.4)
     rack (1.5.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.0.2)
@@ -199,8 +206,9 @@ DEPENDENCIES
   ffaker (~> 1.22.1)
   jbuilder (~> 1.2)
   jquery-rails (~> 3.0.4)
+  meta_request
   newrelic_rpm
-  pg
+  pg (~> 0.17.1)
   pry
   rails (= 4.0.2)
   rspec-rails (~> 2.14.0)

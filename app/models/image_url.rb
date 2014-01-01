@@ -10,8 +10,6 @@
 #  updated_at   :datetime
 #
 
-require 'spec_helper'
-
-describe MediaUrl do
-  pending "add some examples to (or delete) #{__FILE__}"
+class ImageUrl < MediaUrl
+  belongs_to :testimony
 end

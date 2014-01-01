@@ -6,5 +6,19 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Admin.create! email: 'samlau95@gmail.com',
-              password: 'password'
+def make_admins
+  Admin.create! email: 'samlau95@gmail.com',
+                password: 'password'
+end
+
+def make_testimonies
+  Testimony.create! name: 'Andrew the Apostle',
+                    summary: Faker::Lorem.paragraph,
+                    content: Faker::Lorem.paragraph(10)
+  Testimony.create! name: 'Deborah the Judge',
+                    summary: Faker::Lorem.paragraph,
+                    content: Faker::Lorem.paragraph(10)
+end
+
+make_admins
+make_testimonies
