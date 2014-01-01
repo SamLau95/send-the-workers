@@ -1,11 +1,11 @@
-// Variables, fonts
+/* Variables, fonts */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300|Dancing+Script:700|Oswald:700);
 $title-font-stack: "Dancing Script", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $sub-heading-font-stack: "Oswald", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 $off-white: #FFFAEE;
 
-// Global styles
+/* Global styles */
 html, body {
   width: 100%;
   height: 100%;
@@ -26,7 +26,7 @@ html, body {
   font-size: 1.3rem;
 }
 
-// Sidebar
+/* Sidebar */
 .side-navigation {
   position: absolute;
   margin-left: -2rem;
@@ -51,7 +51,7 @@ html, body {
   }
 }
 
-// Landing
+/* Landing */
 #landing {
   text-align: center;
   background: url('https://s3-us-west-1.amazonaws.com/send-the-workers/BGedit+(1).png');
@@ -83,12 +83,12 @@ html, body {
   }
 }
 
-// Section 2
+/* Section 2 */
 #sec-2 {
   margin-bottom: 3rem;
 }
 
-// Media queries
+/* Media queries */
 @media only screen and (max-width: 40em) {
   .button {
     font-size: 1rem;
