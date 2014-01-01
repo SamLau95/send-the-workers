@@ -11,9 +11,5 @@ ready = ->
       600
     false
 
-  # Sticky side nav for medium+ screens
-  mq = window.matchMedia( "(min-width: 40.063em)" )
-  $('.side-navigation').stickyfloat() if mq.matches
-
 $(document).ready(ready)
 $(document).on('page:load', ready)
