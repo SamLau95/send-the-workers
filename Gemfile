@@ -10,6 +10,7 @@ gem 'ffaker', '~> 1.22.1'
 gem 'cancan', '~> 1.6.10'
 gem 'devise', '~> 3.2.2'
 gem 'newrelic_rpm'
+gem 'rails_12factor', group: :production
 
 gem 'slim-rails', '~> 2.0.4'
 gem 'sass-rails', '~> 4.0.0'
@@ -39,5 +40,3 @@ group :test do
   gem 'database_cleaner', '~> 1.2.0'
   gem 'shoulda', '~> 3.5.0'
 end
-
-gem 'rails_12factor', group: :production
