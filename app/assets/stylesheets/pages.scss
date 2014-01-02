@@ -16,6 +16,10 @@ html, body {
   padding: 3rem;
 }
 
+.wrapper {
+  padding: 1rem 0;
+}
+
 .center-vertical {
   display: table-cell;
   vertical-align: middle;
@@ -29,6 +33,17 @@ html, body {
   margin-bottom: 3rem;
 }
 
+.video-wrapper {
+  position: relative;
+  padding: 1rem 0 56.25%;
+  margin-bottom: 3rem;
+  height: 0;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 /* Sidebar */
 .side-navigation {
@@ -111,9 +126,10 @@ html, body {
   }
 
   #landing {
-    background: url('https://s3-us-west-1.amazonaws.com/send-the-workers/BGedit+(1)+small.png');
-    background-position: 30% 20%;
-
+    
+    #background {
+      background-position: 40% 20%;
+    }
 
     .heading {
       padding: 1rem;

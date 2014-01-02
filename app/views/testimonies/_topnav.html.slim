@@ -1,0 +1,14 @@
+nav.top-bar data-topbar=true
+  ul.title-area
+    li.name
+      h1 = link_to 'Send The Workers', root_path
+    li.toggle-topbar.menu-icon
+      a href="#"
+        span
+
+  section.top-bar-section
+    ul.left
+      / Use index action later
+      li = link_to 'Testimonies', root_path(anchor: 'sec-2')
+      li = link_to 'About', '#'
+      li = link_to 'Contact Us', '#'

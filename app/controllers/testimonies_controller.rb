@@ -3,6 +3,10 @@ class TestimoniesController < ApplicationController
     @testimony = Testimony.find params[:id]
   end
 
+  def index
+    @testimonies = Testimony.all
+  end
+
   private
     def testimony_params
       params.require(:testimony)
