@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140101203205) do
+ActiveRecord::Schema.define(version: 20140102081922) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,6 +41,8 @@ ActiveRecord::Schema.define(version: 20140101203205) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "media_urls", ["testimony_id"], name: "index_media_urls_on_testimony_id", using: :btree
 
   create_table "testimonies", force: true do |t|
     t.text     "name"

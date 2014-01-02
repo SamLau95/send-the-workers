@@ -20,5 +20,11 @@ def make_testimonies
                     content: Faker::Lorem.paragraph(10)
 end
 
+def make_video_urls
+  video_url = '//player.vimeo.com/video/77139145?badge=0'
+  Testimony.all.map { |t| t.create_video_url url: video_url }
+end
+
 make_admins
 make_testimonies
+make_video_urls
