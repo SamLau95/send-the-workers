@@ -2,14 +2,17 @@
 # All this logic will automatically be available in application.js.
 
 ready = ->
+  # Initialize foundation
+  $ -> $(document).foundation()
+
   # Smooth link jumping
-  $('a[href^="#"]').on 'click', (e) ->
+  $('a[href^=#]:not([href=#])').on 'click', (e) ->
     e.preventDefault();
     $target = $(@hash)
+
     $('html, body').animate
       scrollTop: $target.offset().top
       600
-    false
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
