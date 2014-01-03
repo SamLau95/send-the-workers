@@ -7,9 +7,11 @@
   - if @testimony.video
     .row
       .small-12.columns
-        .video-wrapper
+        .flex-video.widescreen.vimeo
           iframe[src="#{@testimony.video}" frameborder="0" width="560" height="349"
                  webkitallowfullscreen=true mozallowfullscreen=true allowfullscreen=true]
   .row
     .small-12.columns
       = @testimony.content
+
+  = render 'testimony_image_slider', testimony: @testimony

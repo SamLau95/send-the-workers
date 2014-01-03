@@ -18,6 +18,14 @@ class Testimony < ActiveRecord::Base
     name.split.first
   end
 
+  def has_video?
+    video_url
+  end
+
+  def has_images?
+    image_urls
+  end
+
   def video
     video_url.url if video_url
   end
