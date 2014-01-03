@@ -5,10 +5,10 @@
     .small-12.columns
       h1.text-center = @testimony.name
 
-  = render 'testimony_video', testimony: @testimony
   
   .row
-    .small-12.columns
+    = render 'testimony_video', testimony: @testimony
+    .small-12.medium-6.medium-pull-6.columns
       = @testimony.content
 
   = render 'testimony_image_slider', testimony: @testimony
