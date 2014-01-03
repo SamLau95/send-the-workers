@@ -3,5 +3,6 @@
     .small-12.columns
       .ul data-orbit=true
         - testimony.images.each do |url|
-          img src=#{url} alt="Image"
-          .orbit-caption Caption
+          li
+            img src="#{url}" alt="Image"
+            .orbit-caption Caption
