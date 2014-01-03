@@ -4,12 +4,9 @@
   .row
     .small-12.columns
       h1.text-center = @testimony.name
-  - if @testimony.video
-    .row
-      .small-12.columns
-        .flex-video.widescreen.vimeo
-          iframe[src="#{@testimony.video}" frameborder="0" width="560" height="349"
-                 webkitallowfullscreen=true mozallowfullscreen=true allowfullscreen=true]
+
+  = render 'testimony_video', testimony: @testimony
+  
   .row
     .small-12.columns
       = @testimony.content
