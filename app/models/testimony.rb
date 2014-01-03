@@ -14,6 +14,9 @@ class Testimony < ActiveRecord::Base
   has_many :image_urls
   has_one  :video_url
 
+  validates :name, :summary, :content, presence: true
+  validates :summary, length: { maximum: 2000 }
+
   def first_name
     name.split.first
   end
