@@ -25,6 +25,16 @@ def make_video_urls
   Testimony.all.map { |t| t.create_video_url url: video_url }
 end
 
+def make_image_urls
+  ['http://placehold.it/800x600/A92B48/fff',
+   'http://placehold.it/800x600/EE964D/fff',
+   'http://placehold.it/800x600/f04124/fff'].each do |url|
+     Testimony.all.map { |t| t.image_urls.create url: url } 
+   end
+
+end
+
 make_admins
 make_testimonies
 make_video_urls
+make_image_urls
