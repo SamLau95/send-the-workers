@@ -14,10 +14,10 @@ end
 def make_testimonies
   Testimony.create! name: 'Andrew the Apostle',
                     summary: Faker::Lorem.paragraph,
-                    content: Faker::Lorem.paragraph(10)
+                    content: Faker::Lorem.paragraph(100)
   Testimony.create! name: 'Deborah the Judge',
                     summary: Faker::Lorem.paragraph,
-                    content: Faker::Lorem.paragraph(10)
+                    content: Faker::Lorem.paragraph(100)
 end
 
 def make_video_urls
