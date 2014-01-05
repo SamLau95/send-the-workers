@@ -1,5 +1,8 @@
+= render 'shared/topnav'
+
+br
 .row
-  .small-12.columns
+  .small-12.medium-8.columns
     h2 Sign in
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .row
@@ -15,5 +18,5 @@
           .small-12.columns
             = f.check_box :remember_me
             = f.label :remember_me
-      = f.submit "Sign in", class: 'button radius'
+      = f.submit "Sign in", class: 'button small radius'
     = render "devise/shared/links"
