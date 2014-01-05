@@ -9,7 +9,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'ffaker', '~> 1.22.1'
 gem 'cancan', '~> 1.6.10'
 gem 'devise', '~> 3.2.2'
-gem 'mercury-rails'
+gem 'mercury-rails', git: 'https://github.com/jejacks0n/mercury.git', ref: '1cc637b'
 gem 'newrelic_rpm'
 gem 'rails_12factor', group: :production
 
