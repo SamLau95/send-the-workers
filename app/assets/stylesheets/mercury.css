@@ -2,6 +2,11 @@
  * Mercury Editor is a Coffeescript and jQuery based WYSIWYG editor.  Documentation and other useful information can be
  * found at https://github.com/jejacks0n/mercury
  *
+ * Supported browsers:
+ *   - Firefox 4+
+ *   - Chrome 10+
+ *   - Safari 5+
+ *
  * Copyright (c) 2011 Jeremy Jackson
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
@@ -17,13 +22,9 @@
  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
+ *= require_self
+ *= require application
+ *= require mercury/mercury
+ *= require mercury_overrides
  */
-$linkColor: #09F !default;
-$linkColorHover: darken($linkColor, 15%) !default;
 
-#mercury_about a { color: $linkColor; }
-#mercury_table #table_display .selected { background: $linkColor; }
-.mercury-uploader .mercury-uploader-progress div.mercury-uploader-indicator div {
-  background-color: $linkColor;
-  border: 1px solid $linkColorHover;
-}

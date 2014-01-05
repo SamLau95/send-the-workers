@@ -7,7 +7,7 @@
  *
  * You can include the Rails jQuery ujs script here to get some nicer behaviors in modals, panels and lightviews when
  * using :remote => true within the contents rendered in them.
- * require jquery_ujs
+ *= require jquery_ujs
  *
  * Add any requires for the support libraries that integrate nicely with Mercury Editor.
  * require mercury/support/history
@@ -25,6 +25,14 @@
  *
  * Require any files you want to use that either extend, or change the default Mercury behavior.
  * require mercury_overrides
+ *
+ *= require modernizr
+ *= require jquery-1.7
+ *= require foundation/foundation
+ *= require_tree ./vendor
+ *= require_tree ./foundation
+ *= require turbolinks
+ *= require pages
  */
 window.Mercury = {
 
