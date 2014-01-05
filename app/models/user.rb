@@ -18,8 +18,13 @@
 #  type                   :string(255)
 #
 
-require 'spec_helper'
+class User < ActiveRecord::Base
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
 
-describe Admin do
-  pending "add some examples to (or delete) #{__FILE__}"
+  def admin?
+    false
+  end
 end

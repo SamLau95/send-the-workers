@@ -4,7 +4,7 @@
 #
 #  id           :integer          not null, primary key
 #  type         :string(255)
-#  url          :string(255)
+#  url          :text
 #  testimony_id :integer
 #  created_at   :datetime
 #  updated_at   :datetime

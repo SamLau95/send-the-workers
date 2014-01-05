@@ -3,9 +3,9 @@
 # Table name: testimonies
 #
 #  id         :integer          not null, primary key
-#  name       :string(255)
-#  summary    :string(255)
-#  content    :string(255)
+#  name       :text
+#  summary    :text
+#  content    :text
 #  created_at :datetime
 #  updated_at :datetime
 #
