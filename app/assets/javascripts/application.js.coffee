@@ -15,5 +15,6 @@
 #= require jquery_ujs
 #= require foundation/foundation
 #= require_tree ./vendor
+#= require_tree ./foundation
 #= require turbolinks
-#= require_tree .
+#= require pages
