@@ -13,6 +13,9 @@ nav.top-bar data-topbar=true
       li = link_to 'About', '#'
       li = link_to 'Contact Us', '#'
     ul.right
+      - if can? :update, Testimony
+        li = link_to 'Edit Page', '/editor' + request.path, id: 'edit-link',
+                     data: { save_url: mercury_update_testimony_path(@testimony) }
       - if user_signed_in?
         li = link_to 'Sign Out', destroy_user_session_path, method: :delete
       - else

@@ -9,6 +9,7 @@
   
   .row
     .small-12.columns
-      = @testimony.content
+      / #testimony-content.mercury-region data-type="editable"
+      = raw @testimony.content
 
   = render 'testimony_image_slider', testimony: @testimony

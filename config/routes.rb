@@ -4,5 +4,7 @@ SendTheWorkers::Application.routes.draw do
   
   devise_for :users
 
-  resources :testimonies, only: [:show, :index]
+  resources :testimonies, only: [:show, :index] do
+    member { post :mercury_update }
+  end
 end

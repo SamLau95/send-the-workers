@@ -7,6 +7,12 @@ class TestimoniesController < ApplicationController
     @testimonies = Testimony.all
   end
 
+  def mercury_update
+    testimony = Testimony.find params[:id]
+    # Update page
+    render text: ''
+  end
+
   private
     def testimony_params
       params.require(:testimony)
