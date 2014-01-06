@@ -11,7 +11,7 @@ html, body {
   height: 100%;
 }
 
-.content {
+#content {
   max-width: none;
   padding: 3rem;
 }
@@ -23,6 +23,10 @@ html, body {
 .center-vertical {
   display: table-cell;
   vertical-align: middle;
+}
+
+.full-height {
+  height: 100vh;
 }
 
 .button {

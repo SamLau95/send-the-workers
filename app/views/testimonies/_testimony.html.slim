@@ -1,0 +1,8 @@
+section.row.full-height id="sec-#{testimony.id}"
+  .small-12.medium-10.medium-offset-1.columns
+    .row
+      h2 Meet #{testimony.first_name}
+    .row.summary
+      = testimony.summary
+    .row.text-center
+      = link_to 'Read More!', testimony_path(testimony), class: 'button radius'

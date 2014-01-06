@@ -6,38 +6,7 @@ section#landing
       .small-12.columns
         h1#title Send The Workers
         p#tagline Testimonies of God's work in the ordinary
-        a.button.radius#begin href='#sec-2' Begin
+        a.button.radius#begin href='#content' Begin
 
-.side-navigation.hide-for-small.medium-3.columns
-  .nav-heading
-    h1
-      span Send The Workers
-  ul
-    li
-      a.button.radius href='#landing' Home
-    li
-      a.button.radius href='#sec-2' Andrew
-    li
-      a.button.radius href='#sec-3' Deborah
-
-.content.row
-  section#sec-2.row
-    .small-12.medium-9.medium-offset-3.columns
-      .row
-        h2 Meet Andrew
-      .row.summary
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, expedita, nostrum iure accusantium aliquam sapiente minima incidunt ducimus atque sed officia unde tempore pariatur eum optio! Voluptas, eos nobis odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, doloremque, cum, consequuntur officia autem ad eaque itaque necessitatibus provident illo quia ipsum earum dolore reprehenderit ipsa eos fugiat quam labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, expedita, nostrum iure accusantium aliquam sapiente minima incidunt ducimus atque sed officia unde tempore pariatur eum optio! Voluptas, eos nobis odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, doloremque, cum, consequuntur officia autem ad eaque itaque necessitatibus provident illo quia ipsum earum dolore reprehenderit ipsa eos fugiat quam labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, expedita, nostrum iure accusantium aliquam sapiente minima incidunt ducimus atque sed officia unde tempore pariatur eum optio! Voluptas, eos nobis odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, doloremque, cum, consequuntur officia autem ad eaque itaque necessitatibus provident illo quia ipsum earum dolore reprehenderit ipsa eos fugiat quam labore.
-      .row.text-center
-        = link_to 'Read More!', testimony_path(1), class: 'button radius'
-      hr
-
-
-  section#sec-3.row
-    .small-12.medium-9.medium-offset-3.columns
-      .row
-        h2 Meet Deborah
-      .row.summary
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, expedita, nostrum iure accusantium aliquam sapiente minima incidunt ducimus atque sed officia unde tempore pariatur eum optio! Voluptas, eos nobis odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, doloremque, cum, consequuntur officia autem ad eaque itaque necessitatibus provident illo quia ipsum earum dolore reprehenderit ipsa eos fugiat quam labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, expedita, nostrum iure accusantium aliquam sapiente minima incidunt ducimus atque sed officia unde tempore pariatur eum optio! Voluptas, eos nobis odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, doloremque, cum, consequuntur officia autem ad eaque itaque necessitatibus provident illo quia ipsum earum dolore reprehenderit ipsa eos fugiat quam labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, expedita, nostrum iure accusantium aliquam sapiente minima incidunt ducimus atque sed officia unde tempore pariatur eum optio! Voluptas, eos nobis odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, doloremque, cum, consequuntur officia autem ad eaque itaque necessitatibus provident illo quia ipsum earum dolore reprehenderit ipsa eos fugiat quam labore.
-      .row.text-center
-        = link_to 'Read More!', testimony_path(2), class: 'button radius'
-
+#content.row
+  = render @testimonies
