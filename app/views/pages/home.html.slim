@@ -1,8 +1,13 @@
-nav#menu.panel role="navigation"
-  ul
-    li: a href="#landing" Home
+.snap-drawers
+  .snap-drawer.snap-drawer-left
+    div
+      h3 Send the Workers
+      ul
+        li: a href="#landing" Home
 
-.wrap.push
+a#open-left href="#" &#9776;
+
+.snap-content#wrapper
   section#landing
     span#background
     .container
@@ -13,5 +18,4 @@ nav#menu.panel role="navigation"
           a.button.radius#begin href='#content' Begin
 
   #content.row
-    a.menu-link href="#menu" &#9776;
     = render @testimonies

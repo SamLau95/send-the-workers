@@ -6,17 +6,19 @@ foundationSettings =
     resume_on_mouseout: true
     timer: false
 
-
 ready = ->
   # Initialize foundation
   $ -> $(document).foundation(foundationSettings)
 
-  # Initialize bigslide
-  $('.menu-link').bigSlide()
+  # Snap.js
+  snap = new Snap element: document.getElementById('wrapper')
+  $('#open-left').on 'click', (e) ->
+    e.preventDefault()
+    snap.open 'left'
 
   # Smooth link jumping
   $('a[href^=#]:not([href=#])').on 'click', (e) ->
-    e.preventDefault();
+    e.preventDefault()
     $target = $(@hash)
 
     $('html, body').animate

@@ -16,10 +16,6 @@ html, body {
   padding: 3rem;
 }
 
-.wrapper {
-  padding: 1rem 0;
-}
-
 .center-vertical {
   display: table-cell;
   vertical-align: middle;
@@ -37,107 +33,25 @@ html, body {
   margin-bottom: 3rem;
 }
 
-/* Snap.js styles */
-.snap-content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  z-index: 2;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translate3d(0, 0, 0);
-     -moz-transform: translate3d(0, 0, 0);
-      -ms-transform: translate3d(0, 0, 0);
-       -o-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
-.snap-drawers {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-}
-
-.snap-drawer {
-  position: absolute;
-  top: 0;
-  right: auto;
-  bottom: 0;
-  left: auto;
-  width: 265px;
-  height: auto;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transition: width 0.3s ease;
-     -moz-transition: width 0.3s ease;
-      -ms-transition: width 0.3s ease;
-       -o-transition: width 0.3s ease;
-          transition: width 0.3s ease;
-}
-
-.snap-drawer-left {
-  left: 0;
-  z-index: 1;
-}
-
-.snap-drawer-right {
-  right: 0;
-  z-index: 1;
-}
-
-.snapjs-left .snap-drawer-right,
-.snapjs-right .snap-drawer-left {
-  display: none;
-}
-
-.snapjs-expand-left .snap-drawer-left,
-.snapjs-expand-right .snap-drawer-right {
-  width: 100%;
-}
-
-.panel {
-    position: fixed;
-    left: -15.625em; /*or width of your navigation panel*/
-    width: 15.625em; /*should match the above value*/
-}
-
-.push {
-  position: absolute;
-}
-
-/* Sidebar */
-.side-navigation {
+/* Menu link */
+#open-left {
   position: fixed;
-  top: 13%;
-  margin-left: 1rem;
-
-  .button {
-    width: 13rem;
-  }
-
-  .nav-heading {
-    margin-bottom: 2.5rem;
-    h1 span {
-      font-family: $sub-heading-font-stack;
-      font-size: 4.5rem;
-      line-height: 6rem;
-      word-spacing: 100rem;
-    }
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-  }
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 1.6rem;
+  background: rgba(0, 0, 0, .4);
+  color: #fff;
+  border-radius: 4px;
+  padding: .2rem .8rem;
+  z-index: 999;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-out;
+     -moz-transition: opacity 0.3s ease-out;
+      -ms-transition: opacity 0.3s ease-out;
+       -o-transition: opacity 0.3s ease-out;
+          transition: opacity 0.3s ease-out;
 }
+.snapjs-left #open-left { opacity: 0; }
 
 /* Landing */
 #landing {
@@ -145,7 +59,6 @@ html, body {
   width: 100%;
   height: 100vh;
   position: relative;
-  z-index: 10;
 
   #background {
     width: 100%;
@@ -161,7 +74,6 @@ html, body {
     display: table;
     width: 100%;
     height: 100%;
-    z-index: 999;
   }
 
   .heading {
@@ -182,19 +94,20 @@ html, body {
   }
 }
 
-/* Section 2 */
-#sec-2 {
-  margin-bottom: 3rem;
-}
-
 /* Media queries */
 @media only screen and (max-width: 40em) {
   .button {
     font-size: 1rem;
   }
 
+  #open-left {
+    top: 1rem;
+    left: 1rem;
+    font-size: 1rem;
+    padding: .2rem .6rem;
+  }
+
   #landing {
-    
     #background {
       background: image-url('BGedit-small.png');
       background-position: 40% 20%;
