@@ -21,7 +21,7 @@ ready = ->
     e.preventDefault()
     $target = $(@hash)
 
-    $('html, body').animate
+    $('body, html').animate
       scrollTop: $target.offset().top
       600
 
