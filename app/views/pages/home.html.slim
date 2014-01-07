@@ -1,3 +1,6 @@
+nav#menu.panel role="navigation"
+  ul
+    li: a href="#landing" Home
 
 section#landing
   span#background
@@ -8,5 +11,7 @@ section#landing
         p#tagline Testimonies of God's work in the ordinary
         a.button.radius#begin href='#content' Begin
 
-#content.row
-  = render @testimonies
+.wrap.push
+  #content.row
+    a.menu-link href="#menu" &#9776;
+    = render @testimonies

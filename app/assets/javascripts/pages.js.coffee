@@ -11,6 +11,9 @@ ready = ->
   # Initialize foundation
   $ -> $(document).foundation(foundationSettings)
 
+  # Initialize bigslide
+  $('.menu-link').bigSlide()
+
   # Smooth link jumping
   $('a[href^=#]:not([href=#])').on 'click', (e) ->
     e.preventDefault();
