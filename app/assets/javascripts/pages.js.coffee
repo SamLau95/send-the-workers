@@ -21,6 +21,8 @@ ready = ->
     e.preventDefault()
     $target = $(@hash)
 
+    snap.close()
+
     $('body, html').animate
       scrollTop: $target.offset().top
       600
