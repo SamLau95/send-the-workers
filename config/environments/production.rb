@@ -27,6 +27,7 @@ SendTheWorkers::Application.configure do
   # config.assets.css_compressor = :sass
 
   # Precompile assets for Heroku
+  config.assets.compress = true
   config.assets.compile = true
 
   # Generate digests for assets URLs.
