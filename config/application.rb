@@ -22,5 +22,8 @@ module SendTheWorkers
 
     # Add the fonts path
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
+    # Use rack-zippy
+    config.middleware.swap(ActionDispatch::Static, Rack::Zippy::AssetServer)
   end
 end
