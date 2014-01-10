@@ -71,7 +71,7 @@ html, body {
     color: #FFFAEE;
     text-align: center;
     padding-bottom: 0.7rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   ul {
@@ -80,9 +80,14 @@ html, body {
     text-align: center;
   }
 
-  li a {
+  li {
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+    a {
       font-size: 1.2rem;
       color: #FFFAEE;
+    }
   }
 }
 
