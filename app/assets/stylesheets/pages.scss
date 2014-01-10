@@ -133,6 +133,10 @@ html, body {
     font-size: 1rem;
   }
 
+  #open-left {
+    display: none;
+  }
+
   #landing {
     #background {
       background: image-url('BGedit-small.png');
