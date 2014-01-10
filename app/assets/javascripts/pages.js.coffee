@@ -11,8 +11,10 @@ ready = ->
   $ -> $(document).foundation(foundationSettings)
 
   # Snap.js
-  snap = new Snap element: document.getElementById('wrapper')
-  # snap.open 'left'
+  snap = new Snap
+    element: document.getElementById('wrapper')
+    disable: 'right'
+  snap.open 'left'
   $('#open-left').on 'click', (e) ->
     e.preventDefault()
     snap.open 'left'
