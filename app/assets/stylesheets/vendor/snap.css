@@ -26,11 +26,6 @@
   width: auto;
   height: auto;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease-out;
-     -moz-transition: opacity 0.3s ease-out;
-      -ms-transition: opacity 0.3s ease-out;
-       -o-transition: opacity 0.3s ease-out;
-          transition: opacity 0.3s ease-out;
 }
 
 .snapjs-left .snap-drawers {
@@ -43,7 +38,7 @@
   right: auto;
   bottom: 0;
   left: auto;
-  width: 265px;
+  width: 266px;
   height: auto;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
