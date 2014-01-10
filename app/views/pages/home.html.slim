@@ -3,8 +3,8 @@
     h3 Send the Workers
     ul
       li: a href="#landing" Home
-      li: a href="#sec-1" Andrew
-      li: a href="#sec-2" Deborah
+      - @testimonies.each do |t|
+        li: a href="#sec-#{t.id}" = t.first_name
 
 = render 'menu_svg'
 
