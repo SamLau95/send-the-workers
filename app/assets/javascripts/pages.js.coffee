@@ -14,7 +14,7 @@ ready = ->
   snap = new Snap
     element: document.getElementById('wrapper')
     disable: 'right'
-  snap.open 'left'
+  # snap.open 'left'
   $('#open-left').on 'click', (e) ->
     e.preventDefault()
     snap.open 'left'
