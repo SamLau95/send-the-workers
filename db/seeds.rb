@@ -9,15 +9,17 @@
 def make_admins
   Admin.create! email: 'samlau95@gmail.com',
                 password: 'password'
+  Admin.create! email: 'deborah.kwon@pepperdine.edu',
+                password: 'password'
 end
 
 def make_testimonies
-  Testimony.create! name: 'Andrew the Apostle',
-                    summary: Faker::Lorem.paragraph(20),
-                    content: Faker::Lorem.paragraph(100)
-  Testimony.create! name: 'Deborah the Judge',
-                    summary: Faker::Lorem.paragraph,
-                    content: Faker::Lorem.paragraph(100)
+  names = ['Andrew the Apostle', 'Deborah the Judge']
+  names.each do |name|
+    Testimony.create! name: name,
+                      summary: Faker::Lorem.paragraph(20),
+                      content: Faker::Lorem.paragraph(100)
+  end
 end
 
 def make_video_urls
