@@ -81,10 +81,11 @@ html, body {
   }
 
   li {
-    padding: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(0,0,0, 0.1);
     a {
+      display: block;
+      padding: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(0,0,0, 0.1);
       font-size: 1.2rem;
       color: #FFFAEE;
     }
